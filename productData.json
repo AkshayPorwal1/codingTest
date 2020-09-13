@@ -1,0 +1,139 @@
+{
+    "jsonArray": [
+        {
+            "id": 1,
+            "name": "Coombes",
+            "img": "images/1.jpg",
+            "category": "lounge",
+            "price": "2,600",
+            "color": "red",
+            "collection": "bedroom"
+        },
+        {
+            "id": 2,
+            "name": "Keeve Set",
+            "img": "images/2.jpg",
+            "category": "armchair",
+            "price": "590",
+            "color": "green",
+            "collection": "diner"
+        },
+        {
+            "id": 3,
+            "name": "Nille",
+            "img": "images/3.jpg",
+            "category": "armchair",
+            "price": "950",
+            "color": "blue",
+            "collection": "bedroom"
+        },
+        {
+            "id": 4,
+            "name": "Momo",
+            "img": "images/4.jpg",
+            "category": "shelves",
+            "price": "890",
+            "color": "green",
+            "collection": "bedroom"
+        },
+        {
+            "id": 5,
+            "name": "Penemille",
+            "img": "images/5.jpg",
+            "category": "lounge",
+            "price": "120",
+            "color": "red",
+            "collection": "livingRoom"
+        },
+        {
+            "id": 6,
+            "name": "Penemille",
+            "img": "images/6.jpg",
+            "category": "lounge",
+            "price": "1020",
+            "color": "blue",
+            "collection": "bedroom"
+        },
+        {
+            "id": 7,
+            "name": "Penemille",
+            "img": "images/7.jpg",
+            "category": "lounge",
+            "price": "120",
+            "color": "red",
+            "collection": "livingRoom"
+        },
+        {
+            "id": 8,
+            "name": "Penemille",
+            "img": "images/8.jpg",
+            "category": "lounge",
+            "price": "120",
+            "color": "green",
+            "collection": "bedroom"
+        },
+        {
+            "id": 9,
+            "name": "Coombes",
+            "img": "images/1.jpg",
+            "category": "lounge",
+            "price": "2,600",
+            "color": "red",
+            "collection": "livingRoom"
+        },
+        {
+            "id": 10,
+            "name": "Keeve Set",
+            "img": "images/2.jpg",
+            "category": "armchair",
+            "price": "590",
+            "color": "red",
+            "collection": "bedroom"
+        },
+        {
+            "id": 11,
+            "name": "Nille",
+            "img": "images/3.jpg",
+            "category": "armchair",
+            "price": "950",
+            "color": "red",
+            "collection": "livingRoom"
+        },
+        {
+            "id": 12,
+            "name": "Momo",
+            "img": "images/4.jpg",
+            "category": "shelves",
+            "price": "890",
+            "color": "green",
+            "collection": "bedroom"
+        },
+        {
+            "id": 13,
+            "name": "Penemille",
+            "img": "images/5.jpg",
+            "category": "lounge",
+            "price": "120",
+            "color": "red",
+            "collection": "livingRoom"
+        },
+        {
+            "id": 14,
+            "name": "Penemille",
+            "img": "images/6.jpg",
+            "category": "lounge",
+            "price": "120",
+            "color": "red",
+            "collection": "bedroom"
+        },
+        {
+            "id": 15,
+            "name": "Penemille",
+            "img": "images/7.jpg",
+            "category": "lounge",
+            "price": "120",
+            "color": "red",
+            "collection": "livingRoom"
+        }
+    ]
+}

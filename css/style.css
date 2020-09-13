@@ -1,0 +1,143 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700&display=swap");
+body {
+  font-family: 'Roboto', sans-serif;
+  color: #0A2135;
+}
+
+.navbar .navbar-brand {
+  width: 50px;
+  height: 50px;
+  background-color: #0A2135;
+  color: #FFFFFF;
+  line-height: 50px;
+  font-size: 30px;
+  font-size: 1.875rem;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+}
+
+.navbar .navbar-brand:hover, .navbar .navbar-brand:active, .navbar .navbar-brand:focus {
+  color: #FFFFFF;
+}
+
+.navbar .nav-item .nav-link {
+  font-size: 15px;
+  font-size: 0.9375rem;
+  color: #0A2135;
+  font-weight: 500;
+}
+
+.navbar button[type="submit"] {
+  border: none;
+  color: #0A2135;
+  font-weight: bold;
+}
+
+.navbar input[type="search"] {
+  border: none;
+  border-bottom: 1px solid gold;
+  color: #0A2135;
+  outline: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.filter-panel .search-filter {
+  position: relative;
+}
+
+.filter-panel .search-filter select {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  background-image: none;
+  cursor: pointer;
+  border: none;
+  border-bottom: 1px solid #0A2135;
+  outline: none;
+}
+
+.filter-panel .search-filter i {
+  position: absolute;
+  right: 5px;
+  top: 10px;
+}
+
+.product-list li {
+  width: calc(100% / 3 - 30px);
+  margin: 0 0 30px;
+  font-weight: 400;
+}
+
+@media (max-width: 991px) {
+  .product-list li {
+    width: calc(100% / 2 - 30px);
+  }
+}
+
+@media (max-width: 575px) {
+  .product-list li {
+    width: 100%;
+  }
+}
+
+.product-list li .product-img {
+  position: relative;
+}
+
+.product-list li .product-img:after {
+  position: absolute;
+  content: '';
+  width: 60%;
+  background-color: #FFFFFF;
+  height: 40px;
+  left: 0;
+  bottom: 0;
+}
+
+.product-list li .product-description {
+  position: relative;
+  margin-top: -10px;
+}
+
+.product-list li .product-description .product-name {
+  font-size: 16px;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.product-list li .product-description .product-category {
+  font-size: 14px;
+  font-size: 0.875rem;
+  color: #ADADAD;
+}
+
+.product-list li .product-description .product-category span {
+  color: #000000;
+}
+
+.product-list li .product-description .product-category a {
+  font-size: 24px;
+  font-size: 1.5rem;
+  color: #000000;
+}
+
+.product-list li .product-description .product-category .star {
+  color: #000000;
+}
+
+#paginator span {
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  display: inline-block;
+  cursor: pointer;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+}
+
+#paginator span.active {
+  background-color: #0A2135;
+  color: #FFFFFF;
+}
+/*# sourceMappingURL=style.css.map */
