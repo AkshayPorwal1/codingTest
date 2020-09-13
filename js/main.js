@@ -35,7 +35,7 @@ fetch('http://localhost:3000/jsonArray')
   function colorFilter() {
     let color = document.getElementById("color").value;
     if (color !== 0){
-      filterdData = filterdData.filter(item => item.color === color);
+      filterdData = productData.filter(item => item.color === color);
     }
     newSearch = true;
     setTimeout(paginationInit(filterdData),1000);
@@ -44,7 +44,7 @@ fetch('http://localhost:3000/jsonArray')
   function categotyFilter() {
     let category = document.getElementById("category").value;
     if (category !== 0){
-      filterdData = filterdData.filter(item => item.category === category);
+      filterdData = productData.filter(item => item.category === category);
     }
     newSearch = true;
     setTimeout(paginationInit(filterdData),1000);
@@ -53,7 +53,7 @@ fetch('http://localhost:3000/jsonArray')
   function rangeFilter() {
     let range = document.getElementById("customRange2").value;
     console.log(range);
-    filterdData = filterdData.filter(item => item.price <= range);
+    filterdData = productData.filter(item => item.price <= range);
     newSearch = true;
     setTimeout(paginationInit(filterdData),1000);
   }  
