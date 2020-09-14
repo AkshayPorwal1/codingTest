@@ -47,7 +47,7 @@
         },
         {
             "id": 6,
-            "name": "Penemille",
+            "name": "Acoust",
             "img": "images/6.jpg",
             "category": "lounge",
             "price": "1020",
@@ -56,7 +56,7 @@
         },
         {
             "id": 7,
-            "name": "Penemille",
+            "name": "Mist",
             "img": "images/7.jpg",
             "category": "lounge",
             "price": "120",
@@ -65,7 +65,7 @@
         },
         {
             "id": 8,
-            "name": "Penemille",
+            "name": "Mongeau",
             "img": "images/8.jpg",
             "category": "lounge",
             "price": "120",
@@ -74,7 +74,7 @@
         },
         {
             "id": 9,
-            "name": "Coombes",
+            "name": "West",
             "img": "images/1.jpg",
             "category": "lounge",
             "price": "2,600",
@@ -83,7 +83,7 @@
         },
         {
             "id": 10,
-            "name": "Keeve Set",
+            "name": "Breeze",
             "img": "images/2.jpg",
             "category": "armchair",
             "price": "590",
@@ -92,7 +92,7 @@
         },
         {
             "id": 11,
-            "name": "Nille",
+            "name": "Nigel",
             "img": "images/3.jpg",
             "category": "armchair",
             "price": "950",
@@ -101,7 +101,7 @@
         },
         {
             "id": 12,
-            "name": "Momo",
+            "name": "Chrome",
             "img": "images/4.jpg",
             "category": "shelves",
             "price": "890",
@@ -110,7 +110,7 @@
         },
         {
             "id": 13,
-            "name": "Penemille",
+            "name": "Titan",
             "img": "images/5.jpg",
             "category": "lounge",
             "price": "120",
@@ -119,7 +119,7 @@
         },
         {
             "id": 14,
-            "name": "Penemille",
+            "name": "Inspire",
             "img": "images/6.jpg",
             "category": "lounge",
             "price": "120",
@@ -128,7 +128,7 @@
         },
         {
             "id": 15,
-            "name": "Penemille",
+            "name": "Joy",
             "img": "images/7.jpg",
             "category": "lounge",
             "price": "120",

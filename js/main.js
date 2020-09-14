@@ -3,7 +3,6 @@ let productHTML;
 let filterdData;
 let noResults = `<h3 style="text-align:center"> No Results found! </h3> `;
 let newSearch = false;
-
 fetch('http://localhost:3000/jsonArray')
   .then((response) => {
     return response.json()
@@ -11,7 +10,7 @@ fetch('http://localhost:3000/jsonArray')
   .then((data) => {
     productData = data;
     filterdData = productData;
-    setTimeout(paginationInit(productData),1000);
+    setTimeout(paginationInit(productData),3000);
   })
   .catch((err) => {
     alert('Error Fetching data');
@@ -29,7 +28,7 @@ fetch('http://localhost:3000/jsonArray')
       filterdData = productData.filter(item => item.collection === collect);
     }
     newSearch = true;
-    setTimeout(paginationInit(filterdData),1000);
+    setTimeout(paginationInit(filterdData),3000);
   }
 
   function colorFilter() {
@@ -38,7 +37,7 @@ fetch('http://localhost:3000/jsonArray')
       filterdData = productData.filter(item => item.color === color);
     }
     newSearch = true;
-    setTimeout(paginationInit(filterdData),1000);
+    setTimeout(paginationInit(filterdData),3000);
   }
 
   function categotyFilter() {
@@ -47,7 +46,7 @@ fetch('http://localhost:3000/jsonArray')
       filterdData = productData.filter(item => item.category === category);
     }
     newSearch = true;
-    setTimeout(paginationInit(filterdData),1000);
+    setTimeout(paginationInit(filterdData),3000);
   }
 
   function rangeFilter() {
@@ -55,8 +54,14 @@ fetch('http://localhost:3000/jsonArray')
     console.log(range);
     filterdData = productData.filter(item => item.price <= range);
     newSearch = true;
-    setTimeout(paginationInit(filterdData),1000);
+    setTimeout(paginationInit(filterdData),3000);
   }  
+
+  function showProduct() {
+    const pName = document.getElementById('productName').value;
+    const pDetails = productData.filter(item => item.name === pName);
+    return pDetails[0];
+}
 
   function showData(actualData) {
     if (newSearch === true) {
@@ -65,10 +70,12 @@ fetch('http://localhost:3000/jsonArray')
     productHTML = actualData.length > 0 ? actualData.map(product =>
       `<li class="item">
         <div class="product-img">
-            <img src="${product.img}" style="width:300px;height:300px;" class="w-100" alt="" />
+            <a href="prodInfo.html">
+            <img src="${product.img}" style="width:300px;height:300px;" class="w-100" alt="" id="productImg" />
+            </a>
         </div>
         <div class="product-description">
-            <p class="product-name m-0">${product.name}</p>
+            <p class="product-name m-0" id="productName">${product.name}</p>
             <p class="product-category d-flex justify-content-between m-0 text-uppercase">
                 ${product.category}
                 <span>$${product.price}</span></p>
@@ -87,12 +94,13 @@ fetch('http://localhost:3000/jsonArray')
         </div>
       </li>`
     ): '';
-    if (productHTML.length>0) {
+    if (productHTML.length > 0) {
       $('.product-list').append(productHTML);
     } else {
       $('.product-list').append(noResults);
     }
   }
+
 function paginationInit(actualData) {
   setTimeout(showData(actualData),500);
   const PAGEOBJECT = {
