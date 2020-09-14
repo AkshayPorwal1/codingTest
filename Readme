@@ -1,0 +1,9 @@
+In order to Validate the Assignment kindly start json server using command "json-server --watch productData.json" (Make sure node is installed)
+
+Please find the final result video demo link - https://youtu.be/3UVh-Eg5Hkw
+
+Project includes following functionality which is assumed as basic requirements->
+
+Pagination, Various Filter, fetching hardcoded data from json, SPA while going through the pages and Checking more info on a product,
+Proper designing has been made sure while developing to provide as much close prototype as given in requirements
+
