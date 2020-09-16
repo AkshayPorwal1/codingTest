@@ -70,7 +70,7 @@ fetch('http://localhost:3000/jsonArray')
     productHTML = actualData.length > 0 ? actualData.map(product =>
       `<li class="item">
         <div class="product-img">
-            <a href="prodInfo.html">
+            <a onclick='imagePop()'>
             <img src="${product.img}" style="width:300px;height:300px;" class="w-100" alt="" id="productImg" />
             </a>
         </div>
@@ -100,6 +100,50 @@ fetch('http://localhost:3000/jsonArray')
       $('.product-list').append(noResults);
     }
   }
+
+  function imagePop() {
+  popUp = `<section class="bg-light text-muted py-5">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+          <img src="./images/1.jpg" style="width:400px;height:350px;" alt="" class="img-fluid mb-3">
+      </div>
+      <div class="col-md-6">
+          <p>Kappu Regualr Chair</p>
+          <h3>Scandanavian Collection</h3>
+          <p class="py-2">Vass Shoes make handcrafted men's shoes in the heart of Budapest. I made a concept
+              product page for practice which in my opinion represents their qualities better than
+              their current site.
+          </p>
+          <p class="mt-30">Color</p>
+          <ul class="justify-content-start p-0" style="list-style-type: none; display: inline-flex;">
+              <li><i class="fa fa-circle" aria-hidden="true"></i>
+              </li>
+              <li class="px-2">
+                  <i class="fa fa-check-circle-o" aria-hidden="true"></i>
+              </li>
+          </ul>
+          <p class="mt-100">
+              Price per unit
+          </p>
+          <ul class="justify-content-start p-0" style="list-style-type: none; display: inline-flex;">
+              <li class="pt-2">
+                  <strong>$2,600</strong>
+              </li>
+              <li class="px-4">
+                  <button class="btn btn-dark">Buy now</button>
+              </li>
+              <li class="pt-2">
+                  <i class="fa fa-cart-plus" aria-hidden="true"></i>
+              </li>
+          </ul>
+      </div>
+    </div>
+  </div>
+</section>`;
+  $('.main').empty();
+  $('.main').append(popUp);
+}
 
 function paginationInit(actualData) {
   setTimeout(showData(actualData),500);
