@@ -70,7 +70,7 @@ fetch('http://localhost:3000/jsonArray')
     productHTML = actualData.length > 0 ? actualData.map(product =>
       `<li class="item">
         <div class="product-img">
-            <a onclick='imagePop()'>
+            <a onclick='imagePop()' style="cursor: pointer;">
             <img src="${product.img}" style="width:300px;height:300px;" class="w-100" alt="" id="productImg" />
             </a>
         </div>
